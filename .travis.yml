@@ -1,0 +1,14 @@
+sudo: required
+services:
+- docker
+before_install:
+- curl -L https://goss.rocks/install | sudo sh
+- docker build -t visibilityspots/azure-cli-terraform-vault .
+script:
+- dgoss run --name azure-cli-terraform-vault -ti visibilityspots/azure-cli-terraform-vault
+after_success:
+- if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u=visibilityspots -p="$DOCKER_PASSWORD";
+  docker push visibilityspots/azure-cli-terraform-vault; fi
+env:
+  global:
+    secure: tP3E/ThjFNg0BCX95rfriTOeQiWuWdYqG0rPtHM60qfgUucvW6g4vJAP00ICXFBYuq2qFG+aD6V7EX1MtROw3dEYCnXJUc9kyIAXJpJ/JNptJfAhkN+iASvrg74grmsxQHtpSkYWO1rWKWN1PkNhb74wI0hLbjnsY/e3ymcv/43L+YrX8+QOfvwHyP8VatV3BSysopedV25VNCEYQFaXcGrEo3SXbAvYO8MoC2UAmMBVSk+4wJ2nEBB4YhVRy2ot/j75nVgPdNteT+Hds3hwdzs+2j8WIzyDeXK36lANdqPyj0y556uHfJVExvY+EVveDFLpjBDjYlI4L9lfGdw7DSQMklKUgZRUYgsBDv6EWxiuBaJsnAnmmyKUWdaxmvE6uJB8zkImCx8WYc0ZewFW+vuBClHJNinICZXwvNU5S7XVtsJdSalhNW7iPi2QzuEa0lr2IgY/cOrx8teHuh/RCoRAq3ZPf0zmL+YSf87odwNrKAx0nyhUTtD1/g5b7jtGzf4RDBz6htgO6wWuMA7zwfh0AO3l+bKZvm4c3/3F8p1pfX0LDHz91zwDHsI19oVGHFlZBbenYONvL1rli6vKQpKAXW6YWY5Nyxr4dqAYHc+yJU/zuBV6jf3WTWvmuQFYfc306ZIECu2+h6IhL11FWnKHymT7GZGSN/1WV2GEwQM=
