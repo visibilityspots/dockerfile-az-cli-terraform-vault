@@ -5,6 +5,9 @@ before_install:
 - curl -L https://goss.rocks/install | sudo sh
 - docker build -t visibilityspots/azure-cli-terraform-vault .
 script:
+- docker run -ti --rm visibilityspots/azure-cli-terraform-vault az --version
+- docker run -ti --rm visibilityspots/azure-cli-terraform-vault terraform --version
+- docker run -ti --rm visibilityspots/azure-cli-terraform-vault vault --version
 - dgoss run --name azure-cli-terraform-vault -ti visibilityspots/azure-cli-terraform-vault
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u=visibilityspots -p="$DOCKER_PASSWORD";

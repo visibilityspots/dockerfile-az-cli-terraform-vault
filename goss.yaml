@@ -11,4 +11,5 @@ command:
   vault --version:
     exit-status: 0
     stdout:
-    - Vault v0.10.0 ('5dd7f25f5c4b541f2da62d70075b6f82771a650d')
+    - Vault v0.10.1 ('756fdc4587350daf1c65b93647b2cc31a6f119cd')
+

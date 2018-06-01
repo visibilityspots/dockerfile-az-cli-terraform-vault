@@ -6,7 +6,7 @@ LABEL maintainer="Jan Collijs"
 VOLUME /terraform
 
 ENV terraform_version 0.11.7
-ENV vault_version 0.10.0
+ENV vault_version 0.10.1
 
 RUN wget https://releases.hashicorp.com/terraform/$terraform_version/terraform_${terraform_version}_linux_amd64.zip && \
     unzip terraform_${terraform_version}_linux_amd64.zip -d bin/ && \
