@@ -3,7 +3,7 @@ command:
   az --version | head -1:
     exit-status: 0
     stdout:
-    - azure-cli (2.0.31)
+    - azure-cli (2.0.33)
   terraform --version | head -1:
     exit-status: 0
     stdout:
