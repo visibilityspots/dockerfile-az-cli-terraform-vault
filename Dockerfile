@@ -1,4 +1,4 @@
-FROM azuresdk/azure-cli-python
+FROM microsoft/azure-cli:2.0.34
 
 LABEL authors="Jeroen Hoekx - Stijn Tintel"
 LABEL maintainer="Jan Collijs"
@@ -6,7 +6,7 @@ LABEL maintainer="Jan Collijs"
 VOLUME /terraform
 
 ENV terraform_version 0.11.7
-ENV vault_version 0.10.1
+ENV vault_version 0.10.2
 
 RUN wget https://releases.hashicorp.com/terraform/$terraform_version/terraform_${terraform_version}_linux_amd64.zip && \
     unzip terraform_${terraform_version}_linux_amd64.zip -d bin/ && \

@@ -3,13 +3,13 @@ command:
   az --version | head -1:
     exit-status: 0
     stdout:
-    - azure-cli (2.0.33)
+    - azure-cli (2.0.34)
   terraform --version | head -1:
     exit-status: 0
     stdout:
     - Terraform v0.11.7
-  vault --version:
+  vault --version | head -1:
     exit-status: 0
     stdout:
-    - Vault v0.10.1 ('756fdc4587350daf1c65b93647b2cc31a6f119cd')
+    - Vault v0.10.2 ('3ee0802ed08cb7f4046c2151ec4671a076b76166')
 
