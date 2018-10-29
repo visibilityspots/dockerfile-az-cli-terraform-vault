@@ -1,6 +1,6 @@
 # azure-terraform-vault
 
-[![Build Status](https://travis-ci.org/visibilityspots/dockerfile-az-cli-terraform-vault.svg?branch=master)](https://travis-ci.org/visibilityspots/dockerfile-az-cli-terraform-vault)
+[![Build Status](https://travis-ci.org/visibilityspots/dockerfile-az-cli-terraform-vault.svg?branch=master)](https://travis-ci.org/visibilityspots/dockerfile-az-cli-terraform-vault)[![Anchore Image Overview](https://anchore.io/service/badges/image/ad407312799b3067e34ab4b84b232eb5b47d57755f259598287007e53c56ddd5)](https://anchore.io/image/dockerhub/visibilityspots%2Fdockerfile-az-cli-terraform-vault%3Alatest)
 
 ## run
 
