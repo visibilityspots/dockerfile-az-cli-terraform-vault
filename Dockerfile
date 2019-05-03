@@ -1,4 +1,4 @@
-FROM microsoft/azure-cli:2.0.60
+FROM microsoft/azure-cli:2.0.61
 
 LABEL authors="Jeroen Hoekx - Stijn Tintel"
 LABEL maintainer="Jan Collijs"
@@ -6,7 +6,7 @@ LABEL maintainer="Jan Collijs"
 VOLUME /terraform
 
 ENV terraform_version 0.11.13
-ENV vault_version 1.0.3
+ENV vault_version 1.1.2
 
 RUN apk update && \
     apk add docker && \
