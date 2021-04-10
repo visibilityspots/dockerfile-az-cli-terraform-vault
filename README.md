@@ -1,9 +1,9 @@
 # azure-terraform-vault
 
 [![build status](https://github.com/visibilityspots/dockerfile-az-cli-terraform-vault/actions/workflows/main.yaml/badge.svg)](https://github.com/visibilityspots/dockerfile-az-cli-terraform-vault/actions/workflows/main.yaml)
-[![docker image size](https://img.shields.io/docker/image-size/visibilityspots/dockerfile-az-cli-terraform-vault/latest)](https://hub.docker.com/r/visibilityspots/azure-cli-terraform-vault)
+[![docker image size](https://img.shields.io/docker/image-size/visibilityspots/azure-cli-terraform-vault/latest)](https://hub.docker.com/r/visibilityspots/azure-cli-terraform-vault)
 [![docker pulls](https://img.shields.io/docker/pulls/visibilityspots/azure-cli-terraform-vault.svg)](https://hub.docker.com/r/visibilityspots/azure-cli-terraform-vault/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## run
 
