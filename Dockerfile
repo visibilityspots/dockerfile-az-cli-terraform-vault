@@ -1,4 +1,4 @@
-FROM microsoft/azure-cli:2.0.61
+FROM mcr.microsoft.com/azure-cli:2.0.61
 
 LABEL authors="Jeroen Hoekx - Stijn Tintel"
 LABEL maintainer="Jan Collijs"
